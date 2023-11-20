@@ -1,0 +1,413 @@
+/* Reset box-sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Overall container styles */
+.rectangle {
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  /* Background pattern */
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/lightpaperfibers.png);
+}
+
+/* Nested container for additional styling */
+.nested-rectangle {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+}
+
+/* Left-hand side content container */
+.lhs-content {
+  flex: 1;
+  margin-right: 10px;
+  width: 20%;
+  height: 100vh;
+}
+
+/* Heading text styles */
+.text {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Create note button styles */
+.create-note-button {
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Group list styles */
+.group-list {
+  margin-top: 20px;
+}
+
+.group-list p {
+  font-size: 18px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.group-list ul {
+  list-style: none;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.group-list li {
+  font-size: 25px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.group-list li .group-name {
+  display: flex;
+  align-items: center;
+  font: Roboto;
+}
+
+.group-list li .circle {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+}
+
+.group-list li .initials {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.group-list li .full-name {
+  font-size: 20px;
+  color: black;
+}
+
+.group-list li:hover {
+  background-color: #F7ECDC;
+}
+
+/* Color options styles */
+.color-options {
+  display: flex;
+  margin-top: 10px;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Right-hand side content container */
+.rhs-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background: #f7ecdc;
+  align-items: flex-start;
+  width: 100%;
+  margin-right: 20px;
+  justify-content: flex-start;
+}
+
+/* Group notes container */
+.group-notes {
+  margin-bottom: 20px;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.group-notes p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #E8E8E8;
+  padding: 10px;
+  justify-content: flex-start;
+}
+
+.group-notes p .circle {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+}
+
+.group-notes p .initials {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.group-notes p .full-name {
+  font-size: 14px;
+  color: black;
+  margin-left: 10px;
+}
+
+.group-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background-color: #E8E8E8;
+  margin-bottom: auto;
+}
+
+.group-notes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.group-notes li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.group-notes li .note-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.note-time-date {
+  display: inline-block;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.note-time {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.note-date {
+  font-size: 14px;
+  float: left;
+  clear: left;
+  margin-top: 5px;
+  width: 150px;
+}
+
+.note-content {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+
+/* New note box container */
+.new-note-box {
+  align-self: flex-end;
+  width: 100%;
+  margin-top: auto;
+}
+
+.new-note-box textarea {
+  width: calc(100% - 20px);
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 9px solid #e7dfdf;
+  border-radius: 10px;
+  position: relative;
+}
+
+.new-note-box button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  border-color: #ccc;
+}
+
+.new-note-box button:hover {
+  background: #000000;
+}
+
+.add-note-arrow {
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.new-note-box textarea::after {
+  content: '\2192';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: #ffa500;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.new-note-box textarea:hover::after {
+  background: #e59400;
+}
+
+/* Image styles */
+.rhs-content img {
+  width: 626px;
+  height: 300px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: centre;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/* Modal styles */
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 440px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.Modal label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.Modal input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.Modal h2 {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.Modal .group-name-container {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Modal input[type="text"] {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.Modal .color-options {
+  display: flex;
+  align-items: left;
+}
+
+.Modal label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.Modal button {
+  margin-top: auto;
+  align-self: flex-end;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.Modal button:hover {
+  background: #000000;
+}
+
+/* Right-hand side content container with flex column */
+.rhs-content.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Default image container styles */
+.default-image-container {
+  text-align: center;
+}
+
+.default-text {
+  font-size: 40px;
+  margin-top: 10px;
+  font: Roboto;
+  margin-bottom: 5px;
+}
+
+/* Additional text styles */
+.additional-text {
+  font-size: 16px;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/* Encrypted text styles */
+.encrypted-text {
+  font-size: 16px;
+  margin-top: 80px;
+  text-align: center;
+}
