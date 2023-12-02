@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/my-react-app1/static/css/main.96f607d4.css",
+    "main.js": "/my-react-app1/static/js/main.4543a9a4.js",
+    "static/media/image-removebg-preview 1.png": "/my-react-app1/static/media/image-removebg-preview 1.051c5dd6cf08bd17366f.png",
+    "index.html": "/my-react-app1/index.html",
+    "main.96f607d4.css.map": "/my-react-app1/static/css/main.96f607d4.css.map",
+    "main.4543a9a4.js.map": "/my-react-app1/static/js/main.4543a9a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96f607d4.css",
+    "static/js/main.4543a9a4.js"
+  ]
+}
